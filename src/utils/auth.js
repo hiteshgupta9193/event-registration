@@ -1,6 +1,6 @@
 import * as userDetails from './users.js';
 
-const userLocalStorageKey = 'LOGGEDIN_USERID';
+export const userLocalStorageKey = 'LOGGEDIN_USERID';
 const { USERS, userTokens } = userDetails;
 
 export const getLoggedInUser = () => {
@@ -42,10 +42,3 @@ export const validateAuth = (username, password) => {
   return response;
 };
 
-export const clearLocalStorage = () => {
-  localStorage.removeItem(userLocalStorageKey);
-};
-
-export const setLocalStorage = value => {
-  localStorage.setItem(userLocalStorageKey, value);
-};
