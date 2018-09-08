@@ -1,0 +1,37 @@
+@import 'styles/common.scss';
+
+.header {
+  font-size: $header-footer-font-size;
+  height: $header-footer-height;
+  background: $header-footer-bg-color;
+  color: $header-footer-font-color;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .header-item {
+    margin: 0 15px;
+    user-select: none;
+    flex: 1;
+  }
+  .title {
+    display: flex;
+    justify-content: center;
+  }
+
+  .login-btn {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .status {
+    font-size: 15px;
+  }
+
+  .button-loading {
+    cursor: wait;
+  }
+}

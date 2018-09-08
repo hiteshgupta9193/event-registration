@@ -1,0 +1,17 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+class Component3 extends React.Component {
+  render() {
+    return (
+      <div>
+        <div>I am Component3</div>
+        <Link to="/component2">Prev</Link>
+        <br />
+        <Link to="/login">Login</Link>
+      </div>
+    );
+  }
+}
+
+export default Component3;
